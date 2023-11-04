@@ -7,14 +7,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index</title>
     <link rel="stylesheet" href="css/style.css" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+        }
+        .form-style{
+            width: 40vw;
+            height: 100vh;
+            border: 2px solid aliceblue;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            padding: 1rem 2rem;
+            justify-content: space-between;
+        }
+        .title-style{
+            height: 10%;
+            background-color: #ffffff80;
+            border: none;
+            outline: none;
+            padding: 2rem;
+        }
+        .text-style{
+            height: 75%;
+            background-color: #ffffff80;
+            border: none;
+            outline: none;
+            padding: 2rem;
+        }
+        .button-style{
+            padding: 1rem;
+        }
+    </style>
 </head>
 
 <body>
-    <form action="/post" method="post">
-        <input type="text" name="title">
-        <input type="text" name="post">
-        <button type="submit">psot</button>
+    <form action="/post" method="post" class="form-style">
+        <input class="title-style" type="text" name="title">
+        <input class="text-style" type="text" name="post">
+        <div class="char-counter" id="char-counter">
+        </div>
+        <button class="button-style" type="submit">psot</button>
     </form>
+    <script>
+        
+    </script>
 </body>
 
 </html>
